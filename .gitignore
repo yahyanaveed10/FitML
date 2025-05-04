@@ -1,0 +1,25 @@
+# Python
+__pycache__/
+*.py[cod]
+*.class
+*.so
+.Python
+env/
+venv/
+ENV/
+
+# ML/Data
+*.h5
+*.pkl
+*.model
+data/
+models/
+logs/
+
+# IDE
+.vscode/
+.idea/
+
+# Environment
+.env
+*.log
