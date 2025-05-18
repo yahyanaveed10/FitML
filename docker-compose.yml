@@ -1,0 +1,15 @@
+version: '3.8'
+
+services:
+  api:
+    build: .
+    ports:
+      - "8000:8000"
+    volumes:
+      - ./src:/app/src
+      - ./models:/app/models
+      - ./data:/app/data
+    environment:
+      - ENV=development
+      - LOG_LEVEL=DEBUG
+    command: uvicorn src.app:app --host 0.0.0.0 --port 8000 --reload
