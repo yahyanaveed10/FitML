@@ -1,8 +1,9 @@
 from fastapi import APIRouter, Depends
-from src.utils.logging.logger import get_logger
+from ...utils.logging.logger import get_logger
 
 router = APIRouter()
 logger = get_logger(__name__)
+
 
 @router.get("/health")
 async def health_check():

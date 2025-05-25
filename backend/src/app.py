@@ -3,8 +3,8 @@ from fastapi.middleware.cors import CORSMiddleware
 from dotenv import load_dotenv
 import os
 
-from .api.routes.api import api_router
-from .utils.logging.logger import get_logger, setup_file_logging
+from api.routes.api import api_router
+from utils.logging.logger import get_logger, setup_file_logging
 
 # Load environment variables
 load_dotenv()
